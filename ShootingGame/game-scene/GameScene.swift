@@ -60,6 +60,14 @@ class GameScene: SKScene {
     }
     
     func setLevel(){
+        
+        let defaults = UserDefaults.standard
+        Levels.level = defaults.integer(forKey: "level")
+        
+        if Levels.level > 5 || Levels.level < 1 {
+            Levels.level = 1
+        }
+                
         let level = Levels.getLevel()
         
         levelNum = level.level

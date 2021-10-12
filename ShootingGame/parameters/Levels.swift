@@ -8,7 +8,7 @@
 import Foundation
 
 class Levels {
-    
+
     static var level = 1
     
     static func getLevel() -> Level{

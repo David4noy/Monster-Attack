@@ -74,12 +74,9 @@
 			children = (
 				74E2FC14271478970019D7AD /* AppDelegate.swift */,
 				74E2FC2D27149D5A0019D7AD /* sounds */,
-				74E2FC2A27148C560019D7AD /* PhysicsCategory.swift */,
-				74E2FC412715F4E80019D7AD /* Levels.swift */,
-				74E2FC442715F5870019D7AD /* Level.swift */,
-				74E2FC1A271478980019D7AD /* GameScene.swift */,
+				74E2FC4F271613780019D7AD /* parameters */,
+				74E2FC50271613EA0019D7AD /* game-scene */,
 				74E2FC1C271478980019D7AD /* GameViewController.swift */,
-				74E2FC3E2714A0DE0019D7AD /* GameOverScene.swift */,
 				74E2FC1E271478980019D7AD /* Main.storyboard */,
 				74E2FC21271478A30019D7AD /* Assets.xcassets */,
 				74E2FC23271478A30019D7AD /* Info.plist */,
@@ -97,6 +94,25 @@
 				74E2FC4C271601080019D7AD /* lost.mp3 */,
 			);
 			path = sounds;
+			sourceTree = "<group>";
+		};
+		74E2FC4F271613780019D7AD /* parameters */ = {
+			isa = PBXGroup;
+			children = (
+				74E2FC2A27148C560019D7AD /* PhysicsCategory.swift */,
+				74E2FC412715F4E80019D7AD /* Levels.swift */,
+				74E2FC442715F5870019D7AD /* Level.swift */,
+			);
+			path = parameters;
+			sourceTree = "<group>";
+		};
+		74E2FC50271613EA0019D7AD /* game-scene */ = {
+			isa = PBXGroup;
+			children = (
+				74E2FC1A271478980019D7AD /* GameScene.swift */,
+				74E2FC3E2714A0DE0019D7AD /* GameOverScene.swift */,
+			);
+			path = "game-scene";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -18,9 +18,8 @@ class GameOverScene: SKScene {
   init(size: CGSize, won:Bool) {
     super.init(size: size)
     
-    // 1
- //   backgroundColor = SKColor.white
-    
+    let defaults = UserDefaults.standard
+
     if UIDevice.current.userInterfaceIdiom == .phone {
         
         background.zPosition = 0
@@ -41,6 +40,7 @@ class GameOverScene: SKScene {
     if won {
         message = "You Won! 😃"
         Levels.level += 1
+        defaults.setValue(Levels.level, forKey: "level")
         run(SKAction.playSoundFileNamed("victory.mp3", waitForCompletion: false))
     } else {
         message = "You Lose 😢"
