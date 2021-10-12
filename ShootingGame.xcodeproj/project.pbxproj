@@ -1,0 +1,378 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		74E2FC15271478970019D7AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E2FC14271478970019D7AD /* AppDelegate.swift */; };
+		74E2FC1B271478980019D7AD /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E2FC1A271478980019D7AD /* GameScene.swift */; };
+		74E2FC1D271478980019D7AD /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E2FC1C271478980019D7AD /* GameViewController.swift */; };
+		74E2FC20271478980019D7AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74E2FC1E271478980019D7AD /* Main.storyboard */; };
+		74E2FC22271478A30019D7AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74E2FC21271478A30019D7AD /* Assets.xcassets */; };
+		74E2FC2B27148C560019D7AD /* PhysicsCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E2FC2A27148C560019D7AD /* PhysicsCategory.swift */; };
+		74E2FC2F27149D6B0019D7AD /* background-music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 74E2FC2E27149D6B0019D7AD /* background-music.mp3 */; };
+		74E2FC3227149D920019D7AD /* shoot.wav in Resources */ = {isa = PBXBuildFile; fileRef = 74E2FC3127149D920019D7AD /* shoot.wav */; };
+		74E2FC3A27149FCF0019D7AD /* boom.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 74E2FC3927149FCF0019D7AD /* boom.mp3 */; };
+		74E2FC3F2714A0DE0019D7AD /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E2FC3E2714A0DE0019D7AD /* GameOverScene.swift */; };
+		74E2FC422715F4E80019D7AD /* Levels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E2FC412715F4E80019D7AD /* Levels.swift */; };
+		74E2FC452715F5870019D7AD /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E2FC442715F5870019D7AD /* Level.swift */; };
+		74E2FC4A2715FFE30019D7AD /* victory.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 74E2FC492715FFE30019D7AD /* victory.mp3 */; };
+		74E2FC4D271601080019D7AD /* lost.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 74E2FC4C271601080019D7AD /* lost.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		74E2FC11271478970019D7AD /* ShootingGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShootingGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		74E2FC14271478970019D7AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		74E2FC1A271478980019D7AD /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		74E2FC1C271478980019D7AD /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		74E2FC1F271478980019D7AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		74E2FC21271478A30019D7AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		74E2FC23271478A30019D7AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74E2FC2A27148C560019D7AD /* PhysicsCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicsCategory.swift; sourceTree = "<group>"; };
+		74E2FC2E27149D6B0019D7AD /* background-music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "background-music.mp3"; sourceTree = "<group>"; };
+		74E2FC3127149D920019D7AD /* shoot.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = shoot.wav; sourceTree = "<group>"; };
+		74E2FC3927149FCF0019D7AD /* boom.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = boom.mp3; sourceTree = "<group>"; };
+		74E2FC3E2714A0DE0019D7AD /* GameOverScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
+		74E2FC412715F4E80019D7AD /* Levels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Levels.swift; sourceTree = "<group>"; };
+		74E2FC442715F5870019D7AD /* Level.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
+		74E2FC492715FFE30019D7AD /* victory.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = victory.mp3; sourceTree = "<group>"; };
+		74E2FC4C271601080019D7AD /* lost.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lost.mp3; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		74E2FC0E271478970019D7AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		74E2FC08271478970019D7AD = {
+			isa = PBXGroup;
+			children = (
+				74E2FC13271478970019D7AD /* ShootingGame */,
+				74E2FC12271478970019D7AD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		74E2FC12271478970019D7AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				74E2FC11271478970019D7AD /* ShootingGame.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		74E2FC13271478970019D7AD /* ShootingGame */ = {
+			isa = PBXGroup;
+			children = (
+				74E2FC14271478970019D7AD /* AppDelegate.swift */,
+				74E2FC2D27149D5A0019D7AD /* sounds */,
+				74E2FC2A27148C560019D7AD /* PhysicsCategory.swift */,
+				74E2FC412715F4E80019D7AD /* Levels.swift */,
+				74E2FC442715F5870019D7AD /* Level.swift */,
+				74E2FC1A271478980019D7AD /* GameScene.swift */,
+				74E2FC1C271478980019D7AD /* GameViewController.swift */,
+				74E2FC3E2714A0DE0019D7AD /* GameOverScene.swift */,
+				74E2FC1E271478980019D7AD /* Main.storyboard */,
+				74E2FC21271478A30019D7AD /* Assets.xcassets */,
+				74E2FC23271478A30019D7AD /* Info.plist */,
+			);
+			path = ShootingGame;
+			sourceTree = "<group>";
+		};
+		74E2FC2D27149D5A0019D7AD /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				74E2FC2E27149D6B0019D7AD /* background-music.mp3 */,
+				74E2FC3127149D920019D7AD /* shoot.wav */,
+				74E2FC3927149FCF0019D7AD /* boom.mp3 */,
+				74E2FC492715FFE30019D7AD /* victory.mp3 */,
+				74E2FC4C271601080019D7AD /* lost.mp3 */,
+			);
+			path = sounds;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		74E2FC10271478970019D7AD /* ShootingGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74E2FC26271478A30019D7AD /* Build configuration list for PBXNativeTarget "ShootingGame" */;
+			buildPhases = (
+				74E2FC0D271478970019D7AD /* Sources */,
+				74E2FC0E271478970019D7AD /* Frameworks */,
+				74E2FC0F271478970019D7AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShootingGame;
+			productName = ShootingGame;
+			productReference = 74E2FC11271478970019D7AD /* ShootingGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		74E2FC09271478970019D7AD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					74E2FC10271478970019D7AD = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 74E2FC0C271478970019D7AD /* Build configuration list for PBXProject "ShootingGame" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 74E2FC08271478970019D7AD;
+			productRefGroup = 74E2FC12271478970019D7AD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				74E2FC10271478970019D7AD /* ShootingGame */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		74E2FC0F271478970019D7AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74E2FC3227149D920019D7AD /* shoot.wav in Resources */,
+				74E2FC4D271601080019D7AD /* lost.mp3 in Resources */,
+				74E2FC2F27149D6B0019D7AD /* background-music.mp3 in Resources */,
+				74E2FC20271478980019D7AD /* Main.storyboard in Resources */,
+				74E2FC3A27149FCF0019D7AD /* boom.mp3 in Resources */,
+				74E2FC22271478A30019D7AD /* Assets.xcassets in Resources */,
+				74E2FC4A2715FFE30019D7AD /* victory.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		74E2FC0D271478970019D7AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74E2FC422715F4E80019D7AD /* Levels.swift in Sources */,
+				74E2FC3F2714A0DE0019D7AD /* GameOverScene.swift in Sources */,
+				74E2FC1B271478980019D7AD /* GameScene.swift in Sources */,
+				74E2FC2B27148C560019D7AD /* PhysicsCategory.swift in Sources */,
+				74E2FC452715F5870019D7AD /* Level.swift in Sources */,
+				74E2FC1D271478980019D7AD /* GameViewController.swift in Sources */,
+				74E2FC15271478970019D7AD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		74E2FC1E271478980019D7AD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				74E2FC1F271478980019D7AD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		74E2FC24271478A30019D7AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		74E2FC25271478A30019D7AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		74E2FC27271478A30019D7AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VA9A4BYVU7;
+				INFOPLIST_FILE = ShootingGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.davidnoy.ShootingGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		74E2FC28271478A30019D7AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VA9A4BYVU7;
+				INFOPLIST_FILE = ShootingGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.davidnoy.ShootingGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		74E2FC0C271478970019D7AD /* Build configuration list for PBXProject "ShootingGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74E2FC24271478A30019D7AD /* Debug */,
+				74E2FC25271478A30019D7AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74E2FC26271478A30019D7AD /* Build configuration list for PBXNativeTarget "ShootingGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74E2FC27271478A30019D7AD /* Debug */,
+				74E2FC28271478A30019D7AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 74E2FC09271478970019D7AD /* Project object */;
+}
